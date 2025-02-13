@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Polindrome checker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #0a0a23;
+    }
+  </style>
+
+
+</head>
+
+<body class="bg-primary h-[100vh]">
+
+  <div class="flex items-center justify-center h-full">
+
+    <div class="flex flex-col justify-center text-center gap-8">
+      <h1 class="text-xl">Polindrome Checker Project</h1>
+      <div class="flex gap-4">
+        <input id="text-input" type="text" placeholder="Type a word to check">
+        <button id="check-btn" class="p-4 bg-white text-black rounded-xl border-2 border-wihite hover:bg-transparent hover:text-white transition-all cursor-pointer">Check!</button>
+        <button id="clear-btn" class="cursor-pointer p-4 bg-red-500 text-white rounded-xl">Clear</button>
+      </div>
+      <div id="result" class="hidden"></div>
+    </div>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
